@@ -10,7 +10,8 @@ def sline():
 # this function grabs our credentials
 def returncreds():
     ## first I want to grab my credentials
-    with open("/home/student/mycode/finalproject/nasa.creds", "r") as mycreds:
+    ## need to point to where your creds are
+    with open("/home/student/NASA-API-browser/finalproject/nasa.creds", "r") as mycreds:
         nasacreds = mycreds.read()
     ## remove any newline characters from the api_key
     nasacreds = "api_key=" + nasacreds.strip("\n")
